@@ -11,7 +11,7 @@ app.use(express.json({ limit: '30mb', extended: true }))
 app.use(express.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors({
   credentials: true,
-  origin: ['https://memories-app-updated.netlify.app']
+  origin: ['http://localhost:3000', 'https://memories-app-updated.netlify.app']
 }));
 
 app.use('/posts', postRoutes);
